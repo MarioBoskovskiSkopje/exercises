@@ -76,6 +76,7 @@
 
 
 
+
 function retirement(retirementAge) {
     var a = " year left until retirement.";
     return function (yearOfBirth) {
@@ -85,6 +86,11 @@ function retirement(retirementAge) {
 }
 
 var retirementUS = retirement(66);
-retirementUS(1990);
+var retirementGermany = retirement(65);
+var retirementIsland = retirement(67);
 
-retirement(66)(1990);
+retirementGermany(1990);
+retirementUS(1990);
+retirementIsland(1990);
+
+// retirement(66)(1990);
